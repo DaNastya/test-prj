@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const TechSupport = ({ onBack }) => {
+const Complaint = ({ onBack }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -258,4 +258,4 @@ const TechSupport = ({ onBack }) => {
   );
 };
 
-export default TechSupport;
+export default Complaint;
