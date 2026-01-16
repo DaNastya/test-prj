@@ -39,7 +39,7 @@ body {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   justify-content: center;
   gap: 30px;
   width: 100%;
@@ -51,6 +51,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   width: 280px;
+  height: 350px;
   padding: 30px 25px;
   display: flex;
   flex-direction: column;
@@ -58,12 +59,10 @@ body {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  position:relative;
+  padding-bottom:50px;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
 
 .icon {
   width: 80px;
@@ -90,16 +89,19 @@ body {
 }
 
 .btn {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  width: 100%;
+position: absolute;
+background-color: #3498db;
+color: white;
+border: none;
+padding: 12px 25px;
+border-radius: 8px;
+font-size: 1rem;
+font-weight: 600;
+cursor: pointer;
+transition: background-color 0.3s ease;
+width: 80%;
+bottom: 5%;
+left: 50%; transform: translateX(-50%)
 }
 
 .btn:hover {
